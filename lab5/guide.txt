@@ -1,0 +1,24 @@
+how to create vertual env? 
+- using Python create env in vs code upper console
+- "py -m venv venv" - create virtual env
+- source myenv/bin/activate
+
+How to export .ipynb files?
+
+EASY WAY --> needed installed some plugins
+
+1. Enter in your console
+
+jupyter nbconvert —to latex file.ipynb
+pdflatex file.tex
+
+2. Если есть кириллица, то надо будет тех файл отредачить.... искать там такие строчки в заголовках тех файла
+
+\usepackage[russian, english]{babel}
+\usepackage[T2A]{fontenc}
+
+HARD WAY --> needed installed some idk staff + plugin jypyter for vs code
+1. export your notebook as web page (html)
+2. then open it in your browser
+3. CTRL+P (for printing) and then select --> import to pdf
+4. Такой метод реально сохранит кириллицу., хз почему.... мейби установленный адоб акробат (пираченный) ещё помогает
